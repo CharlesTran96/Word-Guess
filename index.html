@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="helper.css" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="section-timer" class="hide">
+        Time Remaining: <span id="span-time"></span>s
+    </section>
+
+    <section id="section-landing">
+        <h1>Word Guess</h1>
+        <p>
+            In the following game you will have to answer multiple choice theory questions regarding code. 
+            <br>
+            There will be a time limit to finish all the questions but the catch is that when you get a question wrong the time limit will decrease.
+        </p>
+        <button id="button-start">Start Game</button>
+    </section>
+
+    <section id="section-questions" class="hide">
+        <h1 id="question-title">Question: How are you?</h1>
+        <ul id="question-choices">
+            <li><button>Good</button></li>
+            <li><button>Great</button></li>
+            <li><button>Bad</button></li>
+        </ul>
+    </section>
+
+    <section id="secton-submit" class="hide">
+        <h1>All Done!</h1>
+        <p>Your Highscore is: <span id="span-highscore"></span></p>
+        <label for="input-initials">Initials</label>
+        <input id="input-initials" type="text">
+        <button>Submit</button>
+
+    </section>
+    
+    <section id="section-highscores" class="hide">
+        <h1>Highscore</h1>
+        <ul>
+            <li>Charlie -- 1</li>
+            <li>Kev -- 2</li>
+        </ul>
+        <button>Back</button>
+        <button>Clear</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
